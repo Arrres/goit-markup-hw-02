@@ -7,6 +7,16 @@ li {
 span {
     color:#2196F3;
 }
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+     width: 1600px; 
+    }
+
+  /* HEADER */
+
 .header {
     background: #FFFFFF;
     display: flex;
@@ -21,7 +31,8 @@ span {
 .logo-text {
     display: flex;
     align-items: center;
-    padding: 24px 94px 25px 215px ;
+    padding: 24px 0px 25px 0px ;
+    margin-left: 215px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -33,11 +44,12 @@ span {
 
 .nav-list {
     display: flex;
+    margin-left: 94px;
    
 }
 
 .nav-item {
-    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .nav-link {
@@ -56,7 +68,7 @@ span {
 
 .contact-list {
     display: flex;
-    padding: 32px 215px 32px 330px;
+    margin: 0px 50px 0px 240px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -67,8 +79,11 @@ span {
 }
 
 .contact-item {
+    /* margin-left: 50px; */
 }
-
+.contact-item:first-child {
+    margin-left: 0px;
+}
 .contact-link {
     margin-left: 50px;
     color: #757575;
@@ -78,18 +93,21 @@ span {
 .contact-link:focus {
     color: #2196F3;
 }
+        /*END HEADER*/
+
+        /* ORDER */
 
 .order {
     width: 1600px;
     height: 600px;
+    padding: 0 auto;
     background: #2F303A;
     align-items: center;
     justify-content: center;
 }
 
 .order-title {
-    padding: 200px 432px 30px;
-    /* position: absolute; */
+    padding: 200px 452px 30px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -98,12 +116,10 @@ span {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    
     color: #FFFFFF;
 }
 
 .btn-order {
-    /* position: absolute; */
     margin-left: 700px;
     margin-bottom: 200px;
     padding: 10px 32px;
@@ -120,57 +136,131 @@ span {
     color: #FFFFFF;
 }
 
-.benefits {
-    display: grid;
+        /* END ORDER */
+
+        /* BENEFITS */
+
+.benefits { 
+    padding: 94px 215px;
 }
 
-.benefits-title {
-    display: none;
-}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .benefits-list {
+    display: flex;
+    justify-content:center;
 }
 
 .benefits-item {
+   margin-right: 40px;
+}
+
+.benefits-item:last-child {
+    margin-right: 0px;
 }
 
 .benefits-item-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #212121;
+
 }
 
 .benefits-content {
+    padding-top: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: #757575;
 }
 
-.todo {
-    display: flex;
+        /* END BENEFITS */
+
+        /* TODO */
+
+.todo { 
+
 }
 
 .todo-title {
+    padding-bottom: 50px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
-    margin: 0px 0px 50px 0px;
-    color: var(--second-black);
+
+    color: #212121;
+   
 }
 
 .todo-list { 
     display: flex;
-
+    justify-content: center;
 }
 
 .todo-item {
+    margin-right: 30px;
+    padding-bottom: 94px;
+}
+.todo-item:last-child {
+    margin: 0;
 }
 
 .todo-img {
 }
 
+        /* END TODO */
+
+        /* COMMAND */
 .command {
+    width: 1600px;
+    background-color: #F5F4FA;
+    padding-top: 94px;
 }
 
 .command-title {
+  
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #212121;
 }
 
 .command-list {
+    display: flex;
+    justify-content: center;
 }
 
 .command-item {
@@ -184,6 +274,8 @@ span {
 
 .command-skill {
 }
+
+        /*END COMMAND*/
 
 .footer {
 }
